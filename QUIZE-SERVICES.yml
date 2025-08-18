@@ -17,3 +17,10 @@ eureka:
     hostname: localhost
     prefer-ip-address: false
     instance-id: QUIZE-SERVICES-${spring.application.instance_id:${random.value}}
+
+  # rabbitMQ related config
+rabbitmq:
+  host: localhost
+  port: 5672
+  username: guest
+  password: guest
