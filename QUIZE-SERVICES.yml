@@ -31,3 +31,6 @@ rabbitmq:
   port: 5672
   username: guest
   password: guest
+
+  config:
+    value: you are in default property from git new content rabbit installed
