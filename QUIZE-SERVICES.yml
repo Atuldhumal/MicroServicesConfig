@@ -18,6 +18,13 @@ eureka:
     prefer-ip-address: false
     instance-id: QUIZE-SERVICES-${spring.application.instance_id:${random.value}}
 
+# for automatic refresh actuator on property
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
   # rabbitMQ related config
 rabbitmq:
   host: localhost
