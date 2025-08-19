@@ -32,5 +32,5 @@ rabbitmq:
   username: guest
   password: guest
 
-  config:
-    value: you are in default property from git new content rabbit installed
+config:
+  value: you are in default property from git new content rabbit installed
