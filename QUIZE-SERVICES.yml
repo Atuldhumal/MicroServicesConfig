@@ -33,4 +33,4 @@ rabbitmq:
   password: guest
 
 config:
-  value: you are in default property from git new content rabbit installed
+  value: you are in default property from git new content rabbit installed   quize final check
