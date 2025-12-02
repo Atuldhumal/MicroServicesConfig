@@ -3,7 +3,7 @@ spring:
     name: QUIZE-SERVICES
   data:
     mongodb:
-      uri: mongodb://localhost:27017/MS_quiz_Services
+      uri: mongodb://admin:admin@localhost:27017/quizdb?authSource=admin
 server:
   port: 9092
 
