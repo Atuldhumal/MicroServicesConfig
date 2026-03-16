@@ -1,21 +1,30 @@
 spring:
-  # application:
-  #   name: EASYTICKET-SERVICES
-  # taken from previous project
+  application:
+    name: EASYTICKET-SERVICES
+
   datasource:
     url: jdbc:postgresql://localhost:5434/MS_easyticket_Services
     username: postgres
     password: postgres
+
   jpa:
     hibernate:
       ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 server:
   port: 9095
+
 eureka:
   client:
     register-with-eureka: true
@@ -27,16 +36,8 @@ eureka:
     prefer-ip-address: false
     instance-id: EASYTICKET-SERVICES-${spring.application.instance_id:${random.value}}
 
-    # for automatic refresh actuator on property
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-
-  # rabbitMQ related config
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: guest
-  password: guest
