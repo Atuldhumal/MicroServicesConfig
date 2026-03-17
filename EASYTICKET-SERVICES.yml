@@ -16,11 +16,11 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
 
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+  # rabbitmq:
+  #   host: localhost
+  #   port: 5672
+  #   username: guest
+  #   password: guest
 
 server:
   port: 9095
@@ -41,3 +41,6 @@ management:
     web:
       exposure:
         include: "*"
+
+config:
+  value: you are in default property from git new content rabbit installed   easyticket final check
