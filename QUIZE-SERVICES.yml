@@ -1,9 +1,9 @@
 spring:
   application:
     name: QUIZE-SERVICES
-  data:
-    mongodb:
-      uri: mongodb://admin:admin@localhost:27017/quizdb?authSource=admin
+  # data:
+  #   mongodb:
+  #     uri: mongodb://admin:admin@localhost:27017/quizdb?authSource=admin
 server:
   port: 9092
 
