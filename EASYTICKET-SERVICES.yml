@@ -3,7 +3,7 @@ spring:
     name: EASYTICKET-SERVICES
 
   datasource:
-    url: jdbc:postgresql://localhost:5434/MS_easyticket_Services
+    url: jdbc:postgresql://localhost:5432/MS_easyticket_Services
     username: postgres
     password: postgres
 
